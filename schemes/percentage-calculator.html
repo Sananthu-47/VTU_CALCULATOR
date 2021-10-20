@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>VTU SGPA calculator</title>
+</head>
+<body>
+    
+    <nav class="d-flex justify-content-between">
+        <!-- Conntent loaded from js file -->
+    </nav>
+
+    <div class="body-wrappper">
+        <p class="tagline">Now calculate your VTU sem wise SGPA and CGPA using this calculator. More coming soon....</p>
+        <hr>
+        
+        <h4>Enter <span class="text-primary">SGPA / CGPA</span> for percentage calculation</h4>
+              
+        <div class="flow-wrapper">
+            <span class="mr-2">SGPA / CGPA:</span>
+            <input type="text" placeholder="Enter CGPA / SGPA" class="marks" value="0" class="mr-2">
+        </div>
+        <div class="flow-wrapper">
+            <button class="btn btn-success" id="calculate-percentage" data-branch="ALL" data-scheme="2018" value="1">Calculate</button>
+            <button class="btn btn-danger" id="reset-sgpa">Reset</button>
+        </div>
+        <br>
+        <div class="flow-wrapper">
+            <span class="mr-2">Percentage:</span>
+            <input type="text" id="percentage" placeholder="Percentage" class="mr-2" readonly>
+        </div>
+
+        <!-- How it works section -->
+        <hr>
+        <section>
+            <h3><u>How it works :</u></h3>
+            <ol>
+                <li>Enter your SGPA / CGPA to the input field.</li>
+                <li>Click calculate button to get your percentage in the below field.</li>
+                <li>Use reset button to clear the fields.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">Created by Ananthu😊</div>
+    </footer>
+
+    <script src="../../assets/jQuery/jquery.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

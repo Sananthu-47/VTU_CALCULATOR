@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>VTU SGPA calculator</title>
+</head>
+<body>
+    
+    <nav class="d-flex justify-content-between">
+        <!-- Conntent loaded from js file -->
+    </nav>
+
+    <div class="body-wrappper">
+        <p class="tagline">Now calculate your VTU sem wise SGPA and CGPA using this calculator. More coming soon....</p>
+        <h3>2017 SCHEME</h3>
+        <h4>Enter your <span class="text-primary">Semester 6</span> marks</h4>
+
+        <table class="table-bordered marks-table my-1">
+            <tr>
+                <td>17**61 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**62 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**63 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**64 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**65X </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**66X </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**67 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>17**68 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+        </table>
+        <div class="flow-wrapper">
+            <button class="btn btn-success" id="calculate-sgpa" data-branch="CSE" data-scheme="2017" value="6">Calculate</button>
+            <button class="btn btn-danger" id="reset-sgpa">Reset</button>
+        </div>
+        <div class="flow-wrapper">
+            <span class="mr-2">SGPA:</span>
+            <input type="text" id="sgpa" class="mr-2" readonly>
+            <span class="mr-2">Percentage:</span>
+            <input type="text" id="percentage" readonly class="mr-2">
+        </div>
+
+        <!-- How it works section -->
+        <hr>
+        <section>
+            <h3><u>How it works :</u></h3>
+            <ol>
+                <li>Enter your each subject marks out of 100.</li>
+                <li>Enter 0 if you have a backlog in the subject.</li>
+                <li>Enter the new marks given by VTU after clearing the subject.<br><u>Example</u> : If you scored 12 in first attempt and then scored 45 then enter the new marks ie: 45.</li>
+                <li>After entering marks click calculate and you will see the SGPA and Percentage displayed in the box.</li>
+                <li>Click reset to clear all the fields.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">Created by Ananthu😊</div>
+    </footer>
+
+    <script src="../../assets/jQuery/jquery.min.js"></script>
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var branch = url.searchParams.get("branch");
+        $("#calculate-sgpa").data('branch',branch);
+    </script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root{
+    --background-color: rgb(43, 43, 43);
+    --text-light-color: rgb(231, 231, 231);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: rgb(231, 225, 218);
+}
+
+nav{
+    background-color: rgb(19, 18, 18);
+    box-shadow: 2px 1px 2px rgb(61, 61, 61);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.body-wrappper{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.tagline{
+    color: rgb(66, 197, 147);
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 10px;
+    box-shadow: inset 4px 2px 4px rgb(61, 61, 61),
+                inset -3px -2px 2px rgb(25, 25, 26);    
+}
+
+.list-item{
+    list-style: none;
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 5px 60px;
+    box-shadow: 1px 1px 2px rgb(233, 223, 81),
+                -1px -1px 2px rgb(134, 229, 222);
+    color: var(--text-light-color);
+    margin: 7px 0;
+}
+
+.list-item:hover{
+    box-shadow: 1px 1px 5px rgb(233, 223, 81),
+                -1px -1px 5px rgb(134, 229, 222);
+    background-color: rgb(22, 22, 22);
+}
+
+.list-group a{
+    text-decoration: none;
+}
+
+.marks-table tr td{
+    padding: 5px 10px;
+}
+
+.flow-wrapper{
+    /* background-color: aqua; */
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: rgb(75, 75, 75);
+}
+
+@media only screen and (max-width: 540px) {
+    .flow-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    .flow-wrapper button{
+        margin-top: 5px;
+        display: block;
+    }
+    h3{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>VTU SGPA calculator</title>
+</head>
+<body>
+    
+    <nav class="d-flex justify-content-between">
+        <!-- Conntent loaded from js file -->
+    </nav>
+
+    <div class="body-wrappper">
+        <p class="tagline">Now calculate your VTU sem wise SGPA and CGPA using this calculator. More coming soon....</p>
+        <h3>2018 SCHEME</h3>
+        <h4>Enter your <span class="sem-number" class="marks">All Semester</span> marks to calculate CGPA</h4>
+
+        <table class="table-bordered marks-table my-1">
+            <tr>
+                <td>Semester 1 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 2 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 3 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 4 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 5 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 6 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 7 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+            <tr>
+                <td>Semester 8 </td>
+                <td><input placeholder="Enter your mark" type="number" class="marks"  value="0"></td>
+            </tr>
+        </table>
+        <div class="flow-wrapper">
+            <button class="btn btn-success" id="calculate-cgpa" data-scheme="2018">Calculate</button>
+            <button class="btn btn-danger" id="reset-cgpa">Reset</button>
+        </div>
+        <div class="flow-wrapper">
+            <span class="mr-2">CGPA:</span>
+            <input type="text" id="cgpa" class="mr-2" readonly>
+            <span class="mr-2">Percentage:</span>
+            <input type="text" id="percentage" class="mr-2" readonly>
+        </div>
+
+        <!-- How it works section -->
+        <hr>
+        <section>
+            <h3><u>How it works :</u></h3>
+            <ol>
+                <li>Enter your each semester SGPA out of 10.</li>
+                <li>Enter 0 if you have not completed that semester.</li>
+                <li>After entering SGPA click calculate and you will see the CGPA and Percentage displayed in the box.</li>
+                <li>Click reset to clear all the fields.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">Created by Ananthu😊</div>
+    </footer>
+
+    <script src="../../assets/jQuery/jquery.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

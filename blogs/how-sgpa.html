@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>VTU SGPA calculator</title>
+    <style>
+        ol li{
+            line-height: 26px;
+        }
+        .image-holder{
+            width: 100%;
+        }
+        .image-holder img{
+            width: 100%;
+        }
+        @media only screen and (max-width: 540px) {
+            .body-wrappper{
+                display: block;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="d-flex justify-content-between">
+        <!-- Conntent loaded from js file -->
+    </nav>
+
+    <div class="body-wrappper">
+        <p class="tagline">Now calculate your VTU sem wise SGPA and CGPA using this calculator. More coming soon....</p>
+        <hr>
+        <h3>Calculation for <span class="text-primary">SGPA</span></h3>
+        <ol class="content-wrapper">
+            <li>SGPA is the aggrigate value obtained by your overall credits earned in 1 semester.</li>
+            <li>Collect the credit points of your semester subject provided by VTU.</li>
+            <li>Convert the marks obtained in 100 to a value of 10 by looking into the bellow table.</li><br>
+            <div class="image-holder"><img src="../assets/images/credits_range.jpg" alt=""></div><br>
+            <li>Now the obtained marks will be your credits obtained for that subject in the scale of 10.</li>
+            <li>Now multiply the credits obtained by each subjects to the credits given by VTU for that subject.</li>
+            <li>Add all the obtained products and divide it with the total credits of you semester.</li>
+            <li>The obtained value is your SGPA for your current semester.</li><br>
+            <div class="image-holder"><img src="../assets/images/example_sgpa_calculation.jpg" alt=""></div>
+        </ol>
+    </div>
+
+    <footer>
+        <div class="container">Created by Ananthu😊</div>
+    </footer>
+
+    <script src="../assets/jQuery/jquery.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
