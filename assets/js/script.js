@@ -1,7 +1,7 @@
 window.onload = (event) =>{
     $("nav").html(`<a href="index.html"><header class="text-light">VTU CALC</header></a>
     <div class="d-flex">
-        <a href="about-me.html"><span class="mx-2 small text-warning">About me</span></a>
+        <a href="../../about-me.html"><span class="mx-2 small text-warning">About me</span></a>
         <a href="https://github.com/Sananthu-47/VTU_CALCULATOR" target="_blank"><span class="mx-2 small text-info">Github</span></a>
     </div>
     `);
